@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 pseudo-classes</title>
+    <style>
+        
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+
+        h1{
+            font-weight: bold;
+            text-align: center;
+            color: chocolate;
+            text-decoration: underline;
+            text-shadow: 2 2 rgb(165, 95, 42) ;
+        }
+        
+        div{
+            background-color: rgb(250, 226, 147);
+            border: 2px solid rgb(203, 155, 82);
+
+        }
+
+
+        div > p {
+            display: none;
+        }
+        
+        div:hover > p{
+            display: block;
+        }
+
+        div:hover{
+            color: blueviolet;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>exemplo de hoover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Agora abaixo você vai ver um exemplo de iamgem dinamica que auto se habilita em todos dispositios</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+<h1>Audios</h1>
+
+<p>Agora vamos tentar por um audio aqui no site</p>
+
+
+
+<audio preload="metadata" autoplay controls loop>
+    <source src="midias/linganguliguli-don-pollo.mp3" type="audio/mpeg">
+    <source src="midias/linganguliguli-don-pollo.ogg" type="audio/ogg">
+    <source src="midias/linganguliguli-don-pollo.wav" type="audio/wav">
+    <p>Infeizmenge seu navegador não consegui reporduzir áudios <a href="midias/linganguliguli-don-pollo.mp3">Clique aqui para baixar o audio</a></p>
+</audio>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

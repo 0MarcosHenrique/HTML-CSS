@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links com pseudo elementos</title>
+    <style>
+        
+        
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(249, 231, 207);
+        }
+
+
+        div{
+            margin: auto;
+            justify-content: center;
+            background-color: rgb(253, 238, 188);
+            border: 2px solid rgb(203, 155, 82);
+
+        }
+
+        h1{
+            font-weight: bold;
+            text-align: center;
+            color: chocolate;
+            text-decoration: underline;
+            text-shadow: 3px 2px rgb(165, 95, 42) ;
+        }
+        a{
+            color: rgb(122, 0, 63);
+            text-decoration: none;
+            font-weight: bold;
+            justify-items: baseline;
+        }
+        
+        
+        a:visited{ /*se ja foi visitado ira ficar dessa cor*/
+            color: #ff8f8f;
+        }
+        a:hover{
+            color: rgb(94, 113, 0);
+            text-decoration: underline;
+        }
+        a:active{
+            color: #c8cc5ce1;
+            text-decoration: overline;
+        }
+        a::after{
+            content:' mamãe';
+        }
+
+        a::before{
+            content: ' papai ';
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Pseudo-elementos e Pseudo-classes</h1>
+        
+        <ul>
+            <li><a href="https://youtube.com/@ohardecore?si=4cku_wFQXB8u4N_T" target="_blank">Link para o canal do youtube</a></li>
+            <li><a href="https://www.whatsapp.com/?lang=pt" target="_blank">Link para o zap zap</a></li>
+            <li><a href="https://www.python.org/downloads/" target="_blank">Link para o download de python</a></li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+</html>
