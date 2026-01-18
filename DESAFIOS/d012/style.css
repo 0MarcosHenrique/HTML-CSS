@@ -40,6 +40,29 @@ p > a {
     font-size: large;
 }
 
-.cordel{
+/*PARTE 1 DO CORDEL*/
+
+.cordel-universal{
     font-size: 2em;
+}
+
+main > section.cordel-universal{
+    margin: 40px 0px 100px 0px;
+}
+
+main > section > p.verso-universal{
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+    padding-left: 15px;
+    line-height: 80px;
+}
+
+/*PARTE 2 DO CORDEL*/
+
+section.fundo1{
+    background-image: url(images/background001.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
 }
