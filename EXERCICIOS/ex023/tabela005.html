@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        col.cnome {
+            background-color: bisque;
+        }
+
+        col.csexo {
+            background-color: aquamarine;
+        }
+
+        col.cidade {
+            background-color: burlywood;
+        }
+
+        col.cprof {
+            background-color: rgb(82, 44, 207);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Execício de tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo" span="2">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastros</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Julio Cezar</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Mecânico</td>
+        </tr>
+
+        <tr>
+            <td>Guilherme Andres</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Repositor</td>
+        </tr>
+
+        <tr>
+            <td>Felhipe Souza</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Servente</td>
+        </tr>
+
+        <tr>
+            <td>Julía Cabral</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Médica</td>
+        </tr>
+
+        <tr>
+            <td>Flavio Santos</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Engenheiro</td>
+        </tr>
+
+        <tr>
+            <td>Ana Fereira</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Personal</td>
+        </tr>
+    </table>
+
+</body>
+</html>
