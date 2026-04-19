@@ -22,11 +22,26 @@ header > h1 {
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu > ul {
     list-style-type: none;
+}
+
+span#burguer {
+    display: block;
+    padding: 10px;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    text-align: center;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
 }
 
 menu > ul > li > a {
